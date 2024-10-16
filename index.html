@@ -236,7 +236,9 @@ img.img-fluid {
 .img1,
 .img2,
 .imgs1,
-.imgs2 {
+.imgs2,
+.imgEGP,
+.imgEGP2 {
     flex-shrink: 0;
     float: right;
     border: 3px solid #fff;
@@ -251,7 +253,8 @@ img.img-fluid {
 .img1 img,
 .img2 img,
 .imgs1 img,
-.imgs2 img {
+.imgs2 img,
+.imgs4 img {
     width: 200px;
     height: 300px;
 }
@@ -340,7 +343,8 @@ img.img-fluid {
 .img2 img,
 .imgs1 img,
 .imgs2 img,
-.close-btn {
+.close-btn
+.imgs4 img {
     transition: all 0.3s ease;
 }
 .img1 img {
@@ -356,6 +360,9 @@ img.img-fluid {
 }
 
 .imgs2 img {
+    animation: fadeInUp 0.8s ease-out 0.8s;
+}
+.imgs4 img {
     animation: fadeInUp 0.8s ease-out 0.8s;
 }
 @keyframes bounce {
@@ -402,7 +409,8 @@ img.img-fluid {
 .img1 img,
 .img2 img,
 .imgs1 img,
-.imgs2 img {
+.imgs2 img,
+.imgs4 img {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -410,7 +418,8 @@ img.img-fluid {
 .img1 img:hover,
 .img2 img:hover,
 .imgs1 img:hover,
-.imgs2 img:hover {
+.imgs2 img:hover
+.imgs4 img:hover {
     animation: imageHover 0.3s forwards;
 }
 @keyframes fadeInUp {
@@ -642,7 +651,8 @@ img.img-fluid {
  ],
 'Etisalat Gate Payment (EGP)': [
 'Etisalat Payment Gateway (EPG)',
-'EGP-How does this impact our customers?'
+'EGP-How does this impact our customers?',
+'EGP-How can customer add the card details again?'
 ],
 'SOPs': [
 'Dispatch',
@@ -2353,6 +2363,101 @@ img.img-fluid {
             <p>If the customer is exclusively a <strong>grocery shopper</strong>, after the live push, their card details will no longer be saved or accessible for grocery purchases.</p>
         </li>
     </ul>
+
+`, 'EGP-How can customer add the card details again?': `
+
+ <div class="imgEGP">
+            <img src="imgs4/one.png" alt="How to add card">
+        </div>
+
+  <div class="imgEGP2">
+            <img src="imgs4/two.png" alt="How to add card2">
+        </div>    
+
+    <h1>Adding Card Details</h1>
+
+    <p>To complete your purchase, follow the steps below to add your card details.</p>
+
+    <ol>
+        <li>Navigate to the **Checkout Page**.
+            <ul>
+                <li>Only on the Checkout page can you enter your card details.</li>
+            </ul>
+        </li>
+
+        <li>Click on the **Add New Card** button.
+            <ul>
+                <li>This will initiate the process of entering your card information.</li>
+            </ul>
+        </li>
+
+        <li>Enter your **Card Details**.
+            <ul>
+                <li>Provide the required details, such as card number, expiry date, and CVV.</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h2>Card Validation Charge</h2>
+    <p>As part of the card validation process, a charge will be applied to ensure that your card is active and valid.</p>
+
+    <ol>
+        <li>A 1 AED charge will be applied to your card as part of the validation process.</li>
+        <li>This charge ensures that the card is active and valid for payments.</li>
+    </ol>
+
+    <h2>Charge Reversal</h2>
+    <p>After the card has been validated, the charge will be reversed as per the following process:</p>
+
+    <ol>
+        <li>The 1 AED validation charge will be automatically reversed after a 30-minute window.</li>
+        <li>The reversal will happen without any action required from the customer.</li>
+        <li>The amount will be credited back to the same card used for the validation.</li>
+    </ol>
+
+`,
+'EGP-Refunds': `
+
+
+<h1>Refunds and Reversals</h1>
+
+    <p>Refunds can be processed in different ways depending on the timing of the delivery and refund request. Here’s a breakdown of the available refund types:</p>
+
+    <h2>Refund Types</h2>
+    
+    <ol>
+        <li><strong>Partial Reversal</strong>:
+            <ul>
+                <li>If the order is delivered today, and a partial refund is processed to the card within 24 hours, this is called a **partial reversal**.</li>
+                <li>However, **EPG** does not allow partial reversals. Therefore, this option is not available for processing.</li>
+            </ul>
+        </li>
+        
+        <li><strong>Partial Refund</strong>:
+            <ul>
+                <li>If the order is delivered today, and a partial refund is processed to the card after 24 hours, this is called a **partial refund**.</li>
+            </ul>
+        </li>
+
+        <li><strong>Full Reversal</strong>:
+            <ul>
+                <li>If the order is delivered today, and a full refund is processed to the card within 24 hours, this is called a **full reversal**.</li>
+            </ul>
+        </li>
+
+        <li><strong>Full Refund</strong>:
+            <ul>
+                <li>If the order is delivered today, and a full refund is processed to the card after 24 hours, this is called a **full refund**.</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h2>Important Notes</h2>
+    <ul>
+        <li>Refunds processed through **CS Refunds to Wallet** (partial/full) will continue as they are and will not be impacted by the EPG launch.</li>
+        <li>Refunds processed to the card will take **2-8 business days** to reflect in the customer’s account.</li>
+    </ul>
+
 
 `
 
